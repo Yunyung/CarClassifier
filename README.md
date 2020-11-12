@@ -24,12 +24,8 @@ After downloading imags from [Kaggle challenge](https://www.kaggle.com/c/cs-t082
 ```
 data
   +- training_data        # all training data from kaggle
-  +- train                # training set split
-  +- val                  # validatoin set split from training_data
-  +- testing_data
-  - train.csv             # record img's id and label in train folder
-  - val.csv               # record img's id and albel in val folder
-
+  +- testing_data         # all testing data from kaggle
+  - training_labels.csv   # csv file contain img's id and label
 ```
 
 Run the following command to build the data directory above
@@ -38,6 +34,19 @@ Run:
 mkdir data/train
 mkdir data/val
 python dataPreprocessing.py
+```
+
+After run the command, the data directory should be following struture:
+```
+data
+    +- training_data        # all training data from kaggle
+    +- testing_data         # all testing data from kaggle
+    +- train                # training set split
+    +- val                  # validatoin set split from training_data
+    - train.csv             # record img's id and label in train folder
+    - val.csv               # record img's id and albel in val folder
+    - training_labels.csv   # # csv file contain img's id and label
+
 ```
 
 
