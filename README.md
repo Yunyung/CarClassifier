@@ -29,6 +29,7 @@ data
 ```
 
 Run the following command to build the data directory above
+
 Run:
 ```
 mkdir data/train
@@ -45,13 +46,14 @@ data
     +- val                  # validatoin set split from training_data
     - train.csv             # record img's id and label in train folder
     - val.csv               # record img's id and albel in val folder
-    - training_labels.csv   # # csv file contain img's id and label
+    - training_labels.csv   # csv file contain img's id and label
 
 ```
 
 
 ## Training 
 Training configuration can be specified in ```src/configs.py```.
+
 Then, run:
 ```
 python src/train.py 
@@ -88,7 +90,7 @@ In the task, we apply bagging (Majority vote) method, one kinds of ensemble, to 
 
 Make sure your testing results (*.csv) in [Inference](#Inference) stage inside ```./test_result```. The program will use all .csv file in ```./test_result``` to perform bagging (Majority vote) method.
 
-run: 
+Run: 
 ```
 python src/ensemble.py
 ```
@@ -96,10 +98,10 @@ python src/ensemble.py
 Result will be save in ```./ensemble.csv```.
 
 **For Reproducing Submission**: There are some testing result in ```./test_result``` that we tested before. You can directly run ```python src/ensemble.py``` without traning.
-## Future Work.
+## Future Work
 Provide more argument parsing parameters to make the user easier to use our program.
 
 ## References
 [1] [Pretrained model in PyTorch Office WebSite](https://pytorch.org/docs/stable/torchvision/models.html)
 
-[2] [rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models).
+[2] [rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models)
