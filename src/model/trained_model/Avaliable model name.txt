@@ -1,0 +1,1 @@
+"resnet50", "resnet101", "tresnet_l", "tresnet_m", "densenet121", "resnext50_32x4d", "resnext101_32x8d"
