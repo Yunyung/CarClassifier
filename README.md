@@ -32,9 +32,9 @@ Run the following command to build the data directory above
 
 Run:
 ```
-mkdir data/train
-mkdir data/val
-python dataPreprocessing.py
+mkdir data\train
+mkdir data\val
+python src/dataPreprocessing.py
 ```
 
 After run the command, the data directory should be following struture:
