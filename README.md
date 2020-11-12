@@ -24,7 +24,13 @@ After downloading images from [Kaggle challenge](https://www.kaggle.com/c/cs-t08
 ```
 data
   +- training_data        # all training data from kaggle
+  ∣- 000001.jpg
+  ∣- 000002.jpg
+  ∣- ..........
   +- testing_data         # all testing data from kaggle
+  ∣- 000004.jpg
+  ∣- 000005.jpg
+  ∣- ..........
   - training_labels.csv   # csv file contain img's id and label
 ```
 
