@@ -12,7 +12,7 @@ To reproduct my submission without retrainig, do the following steps:
 All requirements should be detailed in requirements.txt. Using Anaconda is strongly recommended.
 ```
 conda create -n carClassifier python=3.7
-source activate carClassifier
+conda activate carClassifier
 pip install -r requirements.txt
 ```
 
@@ -68,7 +68,7 @@ python src/train.py -m "resnet50"
 ```
 
 
-Pretrained model come from [PyTorch office[1]](https://pytorch.org/docs/stable/torchvision/models.html), [rwightman/pytorch-image-models[2]](https://github.com/rwightman/pytorch-image-models). Avaliable pretrained model name in this task are showed below: 
+Pretrained model come from [PyTorch office [1]](https://pytorch.org/docs/stable/torchvision/models.html), [rwightman/pytorch-image-models [2]](https://github.com/rwightman/pytorch-image-models). Avaliable pretrained model name in this task are showed below: 
 ```
 "resnet50", "resnet101", "tresnet_l", "tresnet_m", "densenet121", "resnext50_32x4d", "resnext101_32x8d"
 ```
@@ -104,4 +104,4 @@ Provide more argument parsing parameters to make the user easier to use our prog
 ## References
 [1] [Pretrained model in PyTorch Office WebSite](https://pytorch.org/docs/stable/torchvision/models.html)
 
-[2] [rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models)
+[2] [rwightman/pytorch-image-models](https://github.com/rwightman/pytorch-image-models).
