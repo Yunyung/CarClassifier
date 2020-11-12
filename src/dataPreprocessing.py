@@ -81,5 +81,7 @@ val_data = pd.read_csv("data/val.csv", dtype=str)
 copy_img_basedOnCSV(train_data, isTrain=True)
 copy_img_basedOnCSV(val_data, isTrain=False)
 
+print("End data preprocessing.")
+
 
     
