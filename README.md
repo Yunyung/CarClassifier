@@ -53,7 +53,7 @@ data
     - train.csv             # record img's id and label in train folder
     - val.csv               # record img's id and albel in val folder
     - training_labels.csv   # csv file contain img's id and label
-
+    - training_labelsWithInt.csv # csv file contain img's id and label and label(int)
 ```
 
 
