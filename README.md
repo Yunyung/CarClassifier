@@ -20,7 +20,7 @@ pip install -r requirements.txt
 Official image can be downloaded from [Kaggle challenge](https://www.kaggle.com/c/cs-t0828-2020-hw1/) or just downloaded from my repository.
 
 ## Dataset Preparation
-After downloading imags from [Kaggle challenge](https://www.kaggle.com/c/cs-t0828-2020-hw1/), we expect the data directory is structured as:
+After downloading images from [Kaggle challenge](https://www.kaggle.com/c/cs-t0828-2020-hw1/), we expect the data directory is structured as:
 ```
 data
   +- training_data        # all training data from kaggle
@@ -58,7 +58,7 @@ python src/train.py
 ```
 Default model will use pretrain ResNet-50.
 
-In addition, you can use ```model name``` specify what kinds of pretrained model you want to train.
+In addition, you can use parameter ```-m "model_name"``` specify what kinds of pretrained model you want to train.
 
 For instance:
 ```
