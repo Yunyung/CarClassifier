@@ -13,7 +13,9 @@ import timm
 from dataset import TestDataset
 from configs import *
 from checkpoint import CheckPointStore
-
+"""
+Inference testing data
+"""
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 def initalize_model(pretrain_model_name, num_classes):
@@ -144,7 +146,7 @@ testloaders = {x: DataLoader(dataset=image_datasets[x], batch_size=BATCHSIZE,
 
 dataset_sizes = {x: len(image_datasets[x]) for x in ['test']}
 
-init_model = initalize_model("resnet101", num_classes=NUM_CLASSES)
+init_model = initalize_model(args.model_name, num_classes=NUM_CLASSES)
 model, checkPointStore = load_model(args.model_path, init_model)
 
 # test 
