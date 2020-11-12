@@ -1,0 +1,7 @@
+data
+  +- training_data        # all training data from kaggle
+  +- train                # training set split
+  +- val                  # validatoin set split from training_data
+  +- testing_data
+  - train.csv             # record img's id and label in train folder
+  - val.csv               # record img's id and albel in val folder
