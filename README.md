@@ -74,7 +74,7 @@ python src/train.py -m "resnet50"
 ```
 
 
-Pretrained model come from [PyTorch office [1]](https://pytorch.org/docs/stable/torchvision/models.html), [rwightman/pytorch-image-models [2]](https://github.com/rwightman/pytorch-image-models). Avaliable pretrained model name in this task are showed below: 
+Pretrained model come from [PyTorch office [1]](https://pytorch.org/docs/stable/torchvision/models.html), [rwightman/pytorch-image-models [2]](https://github.com/rwightman/pytorch-image-models). Avaliable pretrained ```model_name``` in this task are showed below: 
 ```
 "resnet50", "resnet101", "tresnet_l", "tresnet_m", "densenet121", "resnext50_32x4d", "resnext101_32x8d"
 ```
@@ -85,8 +85,9 @@ If trained model are prepared, use it to infer your testing data.
 
 Run:
 ```
-python src/infer.py -mp "trained_model_path"
+python src/infer.py -m "model_name" -mp "trained_model_path"
 ```
+
 This will save the testing predictions in ```test_result/test_pred.csv```.
 
 
