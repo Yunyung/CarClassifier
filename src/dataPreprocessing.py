@@ -21,8 +21,6 @@ def split_train_val():
     print(val)
     train.to_csv("data/train.csv", index=False)
     val.to_csv("data/val.csv", index=False)
-    # copy_img_basedOnCSV(train, isTrain=True)
-    # copy_img_basedOnCSV(val, isTrain=False)
 
 def copy_img_basedOnCSV(csv_file, isTrain):
     img_ids = csv_file['id']
@@ -53,15 +51,9 @@ def LabelEnconde(data):
     encodedLabels = le.transform(data["label"])
     
     return encodedLabels
-    
-    # labels = data['label']
-    # unique_labels = pd.unique(labels)
-    # unique_labels.sort()
-    # print(unique_labels)
-    # print("The number of unique label:", len(unique_labels))
 
 '''
-    Encond label to int for network training
+Encond label to int for network training
 '''
 data = pd.read_csv("data/training_labels.csv", dtype=str)
 data["label_int"] = LabelEnconde(data)
@@ -69,12 +61,12 @@ data.to_csv("data/training_labelsWithInt.csv", index=False)
 
 
 '''
-    Split data to training and validation data
+Split data to training and validation data
 '''
 split_train_val()
 
 '''
-    copy img to corresponding folder based on csv file
+copy img to corresponding folder based on csv file
 '''
 train_data = pd.read_csv("data/train.csv", dtype=str)
 val_data = pd.read_csv("data/val.csv", dtype=str)
