@@ -1,5 +1,5 @@
 # CarClassifier
-This repository gathers the code for car image classification from the [in-class Kaggle challenge](https://www.kaggle.com/c/cs-t0828-2020-hw1/).
+This repository gathers the code for car image classification from the [in-class Kaggle challenge](https://www.kaggle.com/c/cs-t0828-2020-hw1/). See more details in [report](https://github.com/Yunyung/CarClassifier/blob/main/report.md).
 
 ## Reproducing Submission
 Our model achieve 95.04% accuracy in testing set.
